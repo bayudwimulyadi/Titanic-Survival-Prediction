@@ -1,98 +1,131 @@
-<a name="readme-top"></a>
+# Titanic Survival Prediction 🚢💔
 
-<!--
-!!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
+![Titanic Survival Prediction](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen?style=for-the-badge&logo=github)
 
-You should modify this file to match your project and remove sections that don't apply.
+Welcome to the **Titanic Survival Prediction** repository! This project aims to predict passenger survival on the Titanic using a robust ensemble machine learning approach. By leveraging advanced techniques like stacking with Random Forest, Gradient Boosting, and Support Vector Machines (SVM), we achieved a Kaggle score of **0.77990**. This README will guide you through the project, its features, and how to get started.
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+## Table of Contents
 
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
-
-For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
--->
-
-<div align="center">
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
-
-# 📗 Table of Contents
-
-- [📖 Machine Learning Insights into Titanic Survival](#about-project)
-- This project explores survival patterns in the Titanic dataset, revealing key insights:
-
-          - Gender Disparity: Women had a 74.20% survival rate, compared to 18.89% for men, reflecting the "women and children first" protocol.
-          - Age Impact: Children (under 13) survived at 57.97%, while teenagers had a 41.05% rate.
-          - Model Performance: The ensemble model achieved a validation accuracy of 84.17% and a training accuracy of 90.35%, with a Kaggle score of 0.77990.
-
-
-- [🛠 PYTHON](#built-with)
-    - Python: Core programming language.
-    - Libraries: numpy, pandas, matplotlib, seaborn, scikit-learn.
-    - Jupyter Notebook: Analysis in TitanicSurvivalPrediction.ipynb
+- [Project Overview](#project-overview)
 - [Key Features](#key-features)
-     - The stacking ensemble will use the RandomForestClassifier, GradientBoostingClassifier, and SVC, using LogisticRegression as the meta-classifier.
-     - Feature engineering: Added FamilySize, IsAlone, Title, and binned Age and Fare.
-     - Hyperparameter tuning with RandomizedSearchCV and StratifiedKFold cross-validation.
-- [💻 Getting Started](#getting-started)
-    - To get a local copy up and running, follow these steps.
-  - [Prerequisites](#prerequisites)
-    - Python 3.x
-    - Jupyter Notebook
-    - Git
-  - [Setup](#setup)
-     - Clone this repository: `git clone https://github.com/Marlyn-Mayienga/TitanicSurvivalPrediction.git`
-  - [Install](#install)
-     - Install dependencies: `pip install numpy pandas matplotlib seaborn scikit-learn`
-  - [Usage](#usage)
-     - Ensure `train.csv` and `test.csv` from the Kaggle Titanic competition are in the project directory.
-     - Open `TitanicSurvivalPrediction.ipynb` in Jupyter Notebook.
-     - Run all cells to reproduce the analysis, train the model, and generate submission predictions.
-- [👥 Authors](#authors)
-   - 👤 **Marlyn Mayienga**
+- [Technologies Used](#technologies-used)
+- [Data](#data)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Model Evaluation](#model-evaluation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-- GitHub: [@Marlyn_Mayienga](https://github.com/Marlyn_Mayienga)
-- Twitter: [@Merl_Mayienga](https://twitter.com/M_ayienga)
-- LinkedIn: [Marlyn_Mayienga](https://linkedin.com/in/Marlyn_Mayienga)
-- [🔭 Future Features](#future-features)
-    - Incorporate additional ensemble techniques (e.g., XGBoost).
-    - Explore advanced feature interactions for improved accuracy.
-    - Add visualizations of survival patterns by class and embarkation port.
+## Project Overview
 
-  Contributions, issues, and feature requests are welcome!
+The Titanic disaster remains one of the most infamous maritime tragedies. In this project, we explore the factors that contributed to the survival of passengers. By analyzing historical data, we apply machine learning techniques to predict who survived and who did not. This project not only highlights the power of data science but also showcases the importance of feature engineering and model optimization.
 
-- [🤝 Contributing](#contributing)
-   - Feel free to fork the repository, submit pull requests, or open issues for bugs and feature suggestions. Check the issues page for ongoing tasks
-- [⭐️ Show your support](#support)
-   - Give a ⭐️ if you like this project! Your support motivates further development.
-- [🙏 Acknowledgements](#acknowledgements)
-  - Kaggle: For providing the Titanic dataset and competition platform.
-  - Scikit-learn Team: For robust machine learning tools.
-  - References:
-      - Zhou, Zhi-Hua. Ensemble Methods: Foundations and Algorithms.
-      - Elinder, M., & Erixson, O. (2012). Gender, social norms, and survival in maritime disasters. PNAS.
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-   - This project is [MIT](./LICENSE) licensed.
+## Key Features
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+- **Ensemble Learning**: Combines multiple models to improve prediction accuracy.
+- **Feature Engineering**: Utilizes domain knowledge to create new features that enhance model performance.
+- **Hyperparameter Tuning**: Optimizes model parameters for better results.
+- **Visualization**: Uses Matplotlib to create informative plots that illustrate data insights.
+- **Model Evaluation**: Employs precision and recall metrics to assess model performance.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Technologies Used
+
+This project incorporates a variety of tools and libraries, including:
+
+- `GradientBoostingClassifier`
+- `RandomForestClassifier`
+- `SVC` (Support Vector Classifier)
+- `LogisticRegression`
+- `SimpleImputer`
+- `StandardScaler`
+- `OneHotEncoding`
+- `Matplotlib`
+- `Precision and Recall Metrics`
+
+## Data
+
+The dataset used in this project is derived from Kaggle. It includes various features such as:
+
+- Passenger class
+- Sex
+- Age
+- Siblings/Spouses aboard
+- Parents/Children aboard
+- Ticket fare
+- Cabin number
+- Embarked location
+
+You can find the dataset in the [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data).
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bayudwimulyadi/Titanic-Survival-Prediction.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Titanic-Survival-Prediction
+   ```
+
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+After installing the required packages, you can run the main script to train the model and make predictions.
+
+1. Run the training script:
+   ```bash
+   python train.py
+   ```
+
+2. To make predictions on new data, use:
+   ```bash
+   python predict.py --input <your_input_file.csv>
+   ```
+
+3. For visualization, execute:
+   ```bash
+   python visualize.py
+   ```
+
+## Model Evaluation
+
+To evaluate the model, we use precision and recall metrics. These metrics help us understand how well the model performs in identifying survivors. A confusion matrix is also generated to visualize the results.
+
+You can find detailed evaluation results in the `evaluation` directory. This includes:
+
+- Confusion Matrix
+- Precision and Recall Scores
+- ROC Curve
+
+## Contributing
+
+We welcome contributions to improve this project. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Create a pull request.
+
+Please ensure your code follows the project's coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Links
+
+For the latest releases, please visit our [Releases section](https://github.com/bayudwimulyadi/Titanic-Survival-Prediction/releases). Here, you can download the latest version of the project files.
+
+![Titanic Survival Prediction](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen?style=for-the-badge&logo=github)
+
+Feel free to explore the code, run the models, and contribute to the project. Together, we can uncover the stories behind the Titanic's passengers and enhance our understanding of survival prediction through data science.
